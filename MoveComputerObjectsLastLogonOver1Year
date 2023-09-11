@@ -1,2 +1,0 @@
-Get-ADComputer -Filter * -Properties * |Where-Object {$_.LastLogonDate -le $filterDate}|
-Move-ADObject -TargetPath 'OU=Aussortiert,OU=Computers,OU=LOCK,DC=lock,DC=local'
